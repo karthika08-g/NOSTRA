@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra | Premium Fashion</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="offer-bar" id="offerBar">
+    Sign Up and GET <strong>20% OFF</strong> for your first order!
+    <button class="offer-close" id="closeOffer" aria-label="Close offer">×</button>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">NOSTRA<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="#new-arrivals">New Arrivals</a>
+      <a href="#most-wanted">Most Wanted</a>
+      <a href="collections.html">Collections</a>
+      <a href="wishlist.html">♡ Wishlist</a>
+      <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <img id="heroImage"
+        src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1800&q=85"
+        alt="Premium fashion collection">
+      <div class="hero-overlay"></div>
+      <button class="slider-arrow left" id="prevSlide" aria-label="Previous slide">❮</button>
+      <div class="hero-content">
+        <p class="eyebrow">THE NEW SEASON COLLECTION</p>
+        <h1 id="heroTitle">Elevate Your Style.</h1>
+        <p id="heroSubtitle">Discover fashion that defines you.</p>
+        <a href="collections.html" class="btn gold-btn">Explore Collection ↗</a>
+      </div>
+      <button class="slider-arrow right" id="nextSlide" aria-label="Next slide">❯</button>
+      <div class="slide-count" id="slideCount">01 / 03</div>
+    </section>
+
+    <section class="section brands-section">
+      <div class="section-heading">
+        <p class="eyebrow">THE STYLE CLUB</p>
+        <h2>Brands We Love</h2>
+      </div>
+      <div class="brands">
+        <span>ADIDAS</span><span>PUMA</span><span>LEVI'S</span>
+        <span>NIKE</span><span>URBAN</span><span>ESSENTIALS</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">MADE FOR EVERYDAY</p>
+        <h2>Why Shop With Nostra?</h2>
+      </div>
+      <div class="benefits">
+        <article class="benefit">
+          <span class="benefit-icon">✦</span>
+          <h3>Premium Quality</h3>
+          <p>Thoughtfully selected styles for your wardrobe.</p>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon">♡</span>
+          <h3>Style For Everyone</h3>
+          <p>Discover looks that fit your personality.</p>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon">↗</span>
+          <h3>Fresh Arrivals</h3>
+          <p>New looks and collections to explore.</p>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon">◇</span>
+          <h3>Easy Shopping</h3>
+          <p>Find your favourites with a simple experience.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="new-arrivals">
+      <div class="section-heading heading-row">
+        <div>
+          <p class="eyebrow">JUST DROPPED</p>
+          <h2>New Arrivals</h2>
+        </div>
+        <a class="text-link" href="collections.html">View All ↗</a>
+      </div>
+      <div class="product-carousel">
+        <button class="product-arrow product-prev" aria-label="Scroll new arrivals left">❮</button>
+        <div class="product-track" id="newArrivalGrid"></div>
+        <button class="product-arrow product-next" aria-label="Scroll new arrivals right">❯</button>
+      </div>
+    </section>
+
+    <section class="section" id="most-wanted">
+      <div class="section-heading heading-row">
+        <div>
+          <p class="eyebrow">CUSTOMER FAVOURITES</p>
+          <h2>Most Wanted</h2>
+        </div>
+        <a class="text-link" href="collections.html">Explore All ↗</a>
+      </div>
+      <div class="product-carousel">
+        <button class="product-arrow product-prev" aria-label="Scroll most wanted left">❮</button>
+        <div class="product-track" id="mostWantedGrid"></div>
+        <button class="product-arrow product-next" aria-label="Scroll most wanted right">❯</button>
+      </div>
+    </section>
+
+    <section class="limited-offer">
+      <div class="limited-image">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85"
+             alt="Fashion model wearing a stylish outfit" loading="lazy">
+      </div>
+      <div class="limited-content">
+        <p class="eyebrow">A LITTLE SOMETHING SPECIAL</p>
+        <h2>Your Style.<br>Your Moment.</h2>
+        <p>Discover selected styles at special prices.</p>
+        <a href="collections.html" class="btn gold-btn">Shop The Edit ↗</a>
+      </div>
+    </section>
+
+    <section class="newsletter section">
+      <p class="eyebrow">STAY IN THE LOOP</p>
+      <h2>A little more style in your inbox.</h2>
+      <p>Get updates on new arrivals and exclusive offers.</p>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+        <button class="btn gold-btn" type="submit">Subscribe ↗</button>
+      </form>
+      <p id="newsletterMessage" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="index.html" class="logo">NOSTRA<span>.</span></a>
+    <p>Wear your confidence. Define your style.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="collections.html">Collections</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="copyright">© 2026 Nostra. Made for your style.</p>
+  </footer>
+</body>
+</html>
