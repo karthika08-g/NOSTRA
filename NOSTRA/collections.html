@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections | Nostra</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="offer-bar" id="offerBar">
+    Your next favourite look is waiting. Discover Nostra.
+    <button class="offer-close" id="closeOffer" aria-label="Close offer">×</button>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">NOSTRA<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#new-arrivals">New Arrivals</a>
+      <a href="index.html#most-wanted">Most Wanted</a>
+      <a href="collections.html">Collections</a>
+      <a href="wishlist.html">♡ Wishlist</a>
+      <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <section class="page-banner">
+    <p class="eyebrow">FIND YOUR SIGNATURE LOOK</p>
+    <h1>The Collections</h1>
+    <p>Explore the styles that speak to you.</p>
+  </section>
+
+  <main class="collection-layout">
+    <aside class="filters">
+      <h2>Refine Your Style</h2>
+
+      <label class="filter-title" for="searchInput">Search</label>
+      <input id="searchInput" type="search" placeholder="Search products...">
+
+      <h3 class="filter-title">Occasion</h3>
+      <label class="filter-option"><input type="checkbox" name="occasion" value="Summer"> Summer</label>
+      <label class="filter-option"><input type="checkbox" name="occasion" value="Party"> Party</label>
+      <label class="filter-option"><input type="checkbox" name="occasion" value="Beach"> Beach</label>
+      <label class="filter-option"><input type="checkbox" name="occasion" value="Casual"> Casual</label>
+      <label class="filter-option"><input type="checkbox" name="occasion" value="Formal"> Formal</label>
+      <label class="filter-option"><input type="checkbox" name="occasion" value="Sport"> Sport</label>
+
+      <h3 class="filter-title">Colour</h3>
+      <label class="filter-option"><input type="checkbox" name="colour" value="Black"> Black</label>
+      <label class="filter-option"><input type="checkbox" name="colour" value="White"> White</label>
+      <label class="filter-option"><input type="checkbox" name="colour" value="Green"> Green</label>
+      <label class="filter-option"><input type="checkbox" name="colour" value="Blue"> Blue</label>
+      <label class="filter-option"><input type="checkbox" name="colour" value="Beige"> Beige</label>
+      <label class="filter-option"><input type="checkbox" name="colour" value="Brown"> Brown</label>
+      <label class="filter-option"><input type="checkbox" name="colour" value="Grey"> Grey</label>
+      <label class="filter-option"><input type="checkbox" name="colour" value="Pink"> Pink</label>
+
+      <button class="btn outline-btn reset-btn" id="resetFilters" type="button">Reset Filters</button>
+    </aside>
+
+    <section class="collection-results">
+      <div class="results-heading">
+        <div>
+          <p class="eyebrow">CURATED FOR YOU</p>
+          <h2>All Products</h2>
+        </div>
+        <span id="resultCount" aria-live="polite"></span>
+      </div>
+      <div class="product-grid collection-grid" id="collectionGrid"></div>
+      <p class="empty-message" id="emptyMessage" hidden>No matching styles. Try changing your filters.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="index.html" class="logo">NOSTRA<span>.</span></a>
+    <p>Wear your confidence. Define your style.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="collections.html">Collections</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="copyright">© 2026 Nostra. Made for your style.</p>
+  </footer>
+</body>
+</html>
